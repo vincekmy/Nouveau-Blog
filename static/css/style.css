@@ -1,0 +1,82 @@
+body
+{
+  background-color: #ECEFF1;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main
+{
+  flex: 1 0 auto;
+}
+
+.is_signaled
+{
+  background-color: #9E9E9E !important;
+  transition: background 0.3s;
+}
+
+.vote-form
+{
+  display: inline-block;
+}
+
+.legalNotice{
+  padding: 0 0 50px 0;
+}
+
+.footer-row{
+  margin-bottom:0;
+}
+.black {
+  background-color: #3218a2 !important;
+  
+}
+.brand-logo
+{
+  margin-top: 20px;
+}
+header nav
+{
+  height: 100px;
+}
+#Menu_top
+{
+  margin-top: 20px;
+}
+#footer
+{
+  height: 90px;
+  background-color: #b71c1c;
+}
+.footer-copyright
+{
+  margin-top: 20px;
+  background-color: #b71c1c!important;
+}
+/* RESPONSIVE */
+
+@media all and (max-width: 785px){
+  .page-title
+  {
+    font-size: 3em;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+@media all and (max-width: 482px){
+  nav .brand-logo
+  {
+    font-size: 1.3em;
+  }
+
+  .page-title
+  {
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    text-align: center;
+  }
+}

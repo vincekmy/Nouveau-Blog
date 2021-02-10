@@ -1,0 +1,12 @@
+ErrorDocument 403 /Nouveau-Blog/view/error.php
+ErrorDocument 404 /Nouveau-Blog/view/error.php
+ErrorDocument 405 /Nouveau-Blog/view/error.php
+ErrorDocument 408 /Nouveau-Blog/view/error.php
+ErrorDocument 500 /Nouveau-Blog/view/error.php
+ErrorDocument 502 /Nouveau-Blog/view/error.php
+ErrorDocument 504 /Nouveau-Blog/view/error.php
+
+RewriteEngine On
+RewriteRule ^([^_]*)_([^_]*)\.html$ /Nouveau-Blog/?p=$1&a=$2 [L]
+RewriteRule ^([^_]*)_([^_]*)_([^_]*)\.html$ /Nouveau-Blog/?p=$1&a=$2&id=$3 [L]
+RewriteRule ^([^_]*)_([^_]*)_([^_]*)_([^_]*)_([^_]*)\.html$ /Nouveau-Blog/?p=$1&a=$2&postid=$3&commentId=$4&vote=$5 [L]
